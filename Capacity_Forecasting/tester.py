@@ -24,7 +24,7 @@ class TESRNNTester(nn.Module):
     # Actual testing
     def testing(self):
         
-        print("\nTesting model ... ")
+        # print("\nTesting model ... ")
         
         # Only one iteration for the single cluster timeseries
         for clust_num, (train, val, test, idx) in enumerate(self.dl):
