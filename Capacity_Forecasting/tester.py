@@ -44,6 +44,6 @@ class TESRNNTester(nn.Module):
                 np.save(os.path.join(self.csv_save_path, 'test_actuals.npy'), np.squeeze(actuals.cpu()))
                 np.save(os.path.join(self.csv_save_path, 'test_total_overprov.npy'), float(total_over))
                 np.save(os.path.join(self.csv_save_path, 'test_num_viol.npy'), int(num_viol))
-                print("Test set (normalized) overprovisioning: %f " % total_over)
-                print("Test set SLA violations: %d " % num_viol)
+                # print("Test set (normalized) overprovisioning: %f " % total_over)
+                # print("Test set SLA violations: %d " % num_viol)
                 
